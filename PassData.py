@@ -10,9 +10,9 @@ from plot_diff import fun
 # from plot_map import diff_map
 import matplotlib.pyplot as plt
 
-urban_frac = loadmat('Input/urban_frac.mat')
-time = loadmat('Input/time.mat')
-lon_lat = loadmat('Input/lon_lat.mat')
+urban_frac = loadmat('/Users/yueqin/PycharmProjects/TRM0701/Input/urban_frac.mat')
+time = loadmat('/Users/yueqin/PycharmProjects/TRM0701/Input/time.mat')
+lon_lat = loadmat('/Users/yueqin/PycharmProjects/TRM0701/Input/lon_lat.mat')
 
 a_file = open("urban_frac.pkl", "wb")
 pickle.dump(urban_frac, a_file)
@@ -24,10 +24,10 @@ a_file = open("lon_lat.pkl", "wb")
 pickle.dump(lon_lat, a_file)
 a_file.close()
 
-all_T2_rural_urbn_clear_daytime = loadmat('Input/all_T2_rural_urbn_clear_daytime.mat')
-all_Ts_rural_urbn_clear_daytime = loadmat('Input/all_Ts_rural_urbn_clear_daytime.mat')
-all_WGT_2m_rural_urbn_clear_daytime = loadmat('Input/all_WGT_2m_rural_urbn_clear_daytime.mat')
-all_WGT_rural_urbn_clear_daytime = loadmat('Input/all_WGT_rural_urbn_clear_daytime.mat')
+all_T2_rural_urbn_clear_daytime = loadmat('/Users/yueqin/PycharmProjects/TRM0701/Input/all_T2_rural_urbn_clear_daytime.mat')
+all_Ts_rural_urbn_clear_daytime = loadmat('/Users/yueqin/PycharmProjects/TRM0701/Input/all_Ts_rural_urbn_clear_daytime.mat')
+all_WGT_2m_rural_urbn_clear_daytime = loadmat('/Users/yueqin/PycharmProjects/TRM0701/Input/all_WGT_2m_rural_urbn_clear_daytime.mat')
+all_WGT_rural_urbn_clear_daytime = loadmat('/Users/yueqin/PycharmProjects/TRM0701/Input/all_WGT_rural_urbn_clear_daytime.mat')
 a_file = open("all_T2_rural_urbn_clear_daytime.pkl", "wb")
 pickle.dump(all_T2_rural_urbn_clear_daytime, a_file)
 a_file.close()
@@ -41,10 +41,10 @@ a_file = open("all_WGT_rural_urbn_clear_daytime.pkl", "wb")
 pickle.dump(all_WGT_rural_urbn_clear_daytime, a_file)
 a_file.close()
 
-all_T2_rural_urbn_clear_nighttime = loadmat('Input/all_T2_rural_urbn_clear_nighttime.mat')
-all_Ts_rural_urbn_clear_nighttime = loadmat('Input/all_Ts_rural_urbn_clear_nighttime.mat')
-all_WGT_2m_rural_urbn_clear_nighttime = loadmat('Input/all_WGT_2m_rural_urbn_clear_nighttime.mat')
-all_WGT_rural_urbn_clear_nighttime = loadmat('Input/all_WGT_rural_urbn_clear_nighttime.mat')
+all_T2_rural_urbn_clear_nighttime = loadmat('/Users/yueqin/PycharmProjects/TRM0701/Input/all_T2_rural_urbn_clear_nighttime.mat')
+all_Ts_rural_urbn_clear_nighttime = loadmat('/Users/yueqin/PycharmProjects/TRM0701/Input/all_Ts_rural_urbn_clear_nighttime.mat')
+all_WGT_2m_rural_urbn_clear_nighttime = loadmat('/Users/yueqin/PycharmProjects/TRM0701/Input/all_WGT_2m_rural_urbn_clear_nighttime.mat')
+all_WGT_rural_urbn_clear_nighttime = loadmat('/Users/yueqin/PycharmProjects/TRM0701/Input/all_WGT_rural_urbn_clear_nighttime.mat')
 
 
 a_file = open("all_T2_rural_urbn_clear_nighttime.pkl", "wb")
@@ -60,8 +60,8 @@ a_file = open("all_WGT_rural_urbn_clear_nighttime.pkl", "wb")
 pickle.dump(all_WGT_rural_urbn_clear_nighttime, a_file)
 a_file.close()
 
-attribution_clear_daytime_all = loadmat('Input/attribution_clear_daytime_all.mat')
-attribution_clear_nighttime_all = loadmat('Input/attribution_clear_nighttime_all.mat')
+attribution_clear_daytime_all = loadmat('/Users/yueqin/PycharmProjects/TRM0701/Input/attribution_clear_daytime_all.mat')
+attribution_clear_nighttime_all = loadmat('/Users/yueqin/PycharmProjects/TRM0701/Input/attribution_clear_nighttime_all.mat')
 a_file = open("attribution_clear_daytime_all.pkl", "wb")
 pickle.dump(attribution_clear_daytime_all, a_file)
 a_file.close()
@@ -97,7 +97,7 @@ a_file.close()
 
 # need modified
 # experiment_names = ['all_T2_rural_urbn_clear_nighttime', 'all_Ts_rural_urbn_clear_nighttime',
-                    'all_WGT_2m_rural_urbn_clear_nighttime', 'all_WGT_rural_urbn_clear_nighttime']
+#                     'all_WGT_2m_rural_urbn_clear_nighttime', 'all_WGT_rural_urbn_clear_nighttime']
 
 # urban-rural contrast for Ts
 # Diff_alpha = eval(experiment_names[1] + '[\'alpha_sel\']') - eval(
